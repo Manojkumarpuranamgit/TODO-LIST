@@ -1,0 +1,59 @@
+/* Updated styles for your todo list */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background for the whole page */
+  color: #ffffff; /* White text for better contrast */
+}
+
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #444; /* Darker border color */
+  border-radius: 8px;
+  background-color: #1e1e1e; /* Darker background for the app container */
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  border: none; /* No border for a cleaner look */
+  border-radius: 4px;
+  background-color: #333; /* Dark input background */
+  color: #fff; /* White text in input */
+}
+
+button {
+  padding: 10px;
+  background-color: #28a745; /* Green background for buttons */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #444; /* Dark border between items */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+  background-color: #2a2a2a; /* Dark background for list items */
+  border-radius: 4px; /* Slightly rounded corners */
+  margin-bottom: 5px; /* Space between items */
+}
+
+li:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
