@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/TodoList.css'; // Adjust if the path is different
+import '../styles/TodoList.css'; 
 
 interface Todo {
   id: number;
@@ -21,18 +21,17 @@ const TodoComponents: React.FC = () => {
  
   const addTodo = () => {
     if (inputValue.trim() && dateValue) {
-      // Add date property when creating a new todo
       const formattedDate = formatDate(dateValue);
       const newTodo: Todo = { 
         id: Date.now(), 
         text: inputValue, 
         date: formattedDate, 
-        showDelete: false // Initially set to false
+        showDelete: false 
       };
 
       setTodos([...todos, newTodo]);
       setInputValue('');
-      setDateValue(''); // Reset date input after adding
+      setDateValue(''); 
     }
   };
 
@@ -73,7 +72,7 @@ const TodoComponents: React.FC = () => {
               onChange={() => toggleShowDelete(todo.id)}
             />
             {todo.text} - <span>{todo.date}</span>
-            {/* Conditionally render delete SVG based on checkbox status */}
+            
             {todo.showDelete && (
               <span onClick={() => removeTodo(todo.id)} style={{ cursor: 'pointer', marginLeft: '10px' }}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" width="24px" height="24px">
