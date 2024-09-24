@@ -1,5 +1,5 @@
 import React from 'react';
-import TodoList from './components/TodoComponents'; // Adjust the path as necessary
+import TodoList from './components/TodoComponents'; 
 
 const App: React.FC = () => {
   return (
